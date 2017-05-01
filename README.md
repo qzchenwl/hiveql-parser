@@ -21,12 +21,12 @@ $ javar -jar /path/to/hiveql-parser.jar /path/to/your-code.sql
 ## Examples
 
 ```bash
-java -jar hiveql-parser.jar <(echo "select count(*) as count, myfield from &0rz") 2>/dev/null
+$ java -jar hiveql-parser.jar <(echo "select count(*) as count, myfield from &0rz") 2>/dev/null
 [1,39]: line 1:39 cannot recognize input near '&' '0rz' '<EOF>' in join source
 ```
 
 ```bash
-java -jar hiveql-parser.jar <(echo "select count(*) as count, myfield from 0rz") 2>/dev/null | jq .
+$ java -jar hiveql-parser.jar <(echo "select count(*) as count, myfield from 0rz") 2>/dev/null | jq .
 ```
 ```json
 {
