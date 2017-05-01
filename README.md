@@ -1,5 +1,5 @@
 # hiveql-parser
-HiveQL Parser. Parse HiveQL code and print AST in JSON format if success, else print well formed syntax error message.
+HiveQL Parser. Parse HiveQL code and print AST in JSON format if success(exit 0), else print well formed syntax error message(exit 1).
 
 ## Build
 
